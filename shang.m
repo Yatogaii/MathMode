@@ -24,5 +24,5 @@ for j=1:m
     e(j)=-k*sum(p(:,j).*log(p(:,j)));
 end
 d=ones(1,m)-e;  % 计算信息熵冗余度
-w=d./sum(d)    % 求权值w
+w=d./sum(d) ;   % 求权值w
 s=w*p';         % 求综合得分
